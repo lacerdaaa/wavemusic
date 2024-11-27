@@ -30,7 +30,19 @@
   flex-direction: column;
   align-items: center;
   gap: 10px;
+  transition: all 0.7s;
 }
+
+.carousel-lista li:hover {
+  transform: scale(1.08);
+  z-index: 1; 
+}
+
+.carousel-lista:hover li:not(:hover) { 
+  transform: scale(0.90);
+  filter: brightness(0.5); 
+}
+
 .carousel-lista li h3 {
   width: 100%;
   text-align: center;

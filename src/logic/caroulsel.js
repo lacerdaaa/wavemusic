@@ -1,10 +1,8 @@
-
 export function iniciarCarousel() {
-  const carouselContainer = document.querySelector(".carousel-container");
-
-  carouselContainer.addEventListener("animationiteration", () => {
-    carouselContainer.style.animationName = "none";
-    void carouselContainer.offsetWidth;
-    carouselContainer.style.animationName = "scrollInfinito";
+  let e = document.querySelector(".carousel-container");
+  e.addEventListener("animationiteration", () => {
+    (e.style.animationName = "none"),
+      e.offsetWidth,
+      (e.style.animationName = "scrollInfinito");
   });
 }

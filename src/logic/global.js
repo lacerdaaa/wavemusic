@@ -1,16 +1,13 @@
-import { criarPontosDeLuz } from "./light.js"; 
-import { iniciarAnimacaoNumeros } from "./numbers.js";
-import { iniciarCarousel } from "./caroulsel.js";
-
-const container = document.querySelector(".container");
-const containerAlbum = document.querySelector(".container-albuns");
-const cardInformativo = document.getElementById("card-informativo");
-
-cardInformativo.addEventListener('mouseover', () => {
-  iniciarAnimacaoNumeros();
-})
-
-window.scrollTo(0, 0); 
-iniciarCarousel();
-criarPontosDeLuz(container, 20);
-criarPontosDeLuz(containerAlbum, 5)
+import { criarPontosDeLuz as r } from "./light.js";
+import { iniciarAnimacaoNumeros as o } from "./numbers.js";
+import { iniciarCarousel as e } from "./caroulsel.js";
+let container = document.querySelector(".container"),
+  containerAlbum = document.querySelector(".container-albuns"),
+  cardInformativo = document.getElementById("card-informativo");
+cardInformativo.addEventListener("mouseover", () => {
+  o();
+}),
+  window.scrollTo(0, 0),
+  e(),
+  r(container, 20),
+  r(containerAlbum, 5);
