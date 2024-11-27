@@ -12,7 +12,7 @@
   align-items: center; 
   animation: scrollInfinito 20s linear infinite; 
   position: relative; 
-  top: 12%;
+  top: 15%;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -22,17 +22,21 @@
   width: 50%; 
   justify-content: center;
   transition: transform 0.3s ease;
+  gap: 50px   ;
 }
 
 .carousel-lista li  { 
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px
+  gap: 10px;
 }
 .carousel-lista li h3 {
   width: 100%;
   text-align: center;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  font-size: 3.5rem;
 }
 
 @keyframes scrollInfinito {

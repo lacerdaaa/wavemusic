@@ -1,0 +1,90 @@
+footer {
+  background-color: #1e293b;
+  padding: 30px 20px;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  height: 40vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.footer-container {
+  height: 200px;
+  width: 90vw;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+
+.logo {
+  width: 150px;
+}
+
+.logo img {
+  width: 100%;
+}
+
+.coluna {
+  display: flex;
+  flex-direction: column;
+  height: 180px;
+}
+
+.coluna ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  font-size: 1.5rem;
+}
+
+.coluna ul li:hover {
+  text-decoration: underline;
+}
+
+.footer-header {
+  font-weight: 700;
+  color: #cccccc9c;
+  font-size: 2.3rem;
+}
+
+.botao {
+  width: 150px;
+}
+
+.botao button {
+  background-color: #5057ff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.6rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.botao button:hover {
+  background-color: #6b72ff;
+}
+
+@media (max-width: 768px) {
+  .coluna {
+    width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 500px) {
+  .coluna {
+    width: 100%;
+  }
+
+  .botao {
+    margin-top: 20px;
+  }
+}

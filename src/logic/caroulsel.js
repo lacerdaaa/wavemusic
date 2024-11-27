@@ -1,4 +1,3 @@
-// carousel.js
 
 export function iniciarCarousel() {
   const carouselContainer = document.querySelector(".carousel-container");

@@ -5,12 +5,14 @@
 @import url('light.css') screen;
 @import url('card.css') screen;
 @import url('carousel.css') screen;
+@import url('albums.css') screen;
+@import url('footer.css') screen;
 
 * { 
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', cursive, sans-serif ;
+    font-family: 'Poppins' ;
 }
 
 html {

@@ -18,7 +18,7 @@
   box-shadow: 0 0 200px 100px rgba(80, 87, 255, 0.6); 
   animation: brilho 5s infinite alternate ease-in-out; 
   transition: top 10s ease-in-out, left 1s ease-in-out; 
-  z-index: -1;
+  z-index: -2;
 }
 
 @keyframes brilho {
