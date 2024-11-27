@@ -10,7 +10,7 @@
   width: 200%; 
   display: flex;
   align-items: center; 
-  animation: scrollInfinito 20s linear infinite; 
+  animation: scrollInfinito 25s linear infinite; 
   position: relative; 
   top: 15%;
   left: 50%;
@@ -22,25 +22,36 @@
   width: 50%; 
   justify-content: center;
   transition: transform 0.3s ease;
-  gap: 50px   ;
+  gap: 50px;
 }
 
-.carousel-lista li  { 
+.carousel-lista li { 
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 10px;
-  transition: all 0.7s;
+  transition: all 0.3s ease; 
+  perspective: 800px; 
+  transform-style: preserve-3d;
+  & img {
+    width: 400px;
+    height: auto;
+  }
 }
 
-.carousel-lista li:hover {
-  transform: scale(1.08);
-  z-index: 1; 
+.carousel-lista li:hover { 
+  transform: translateZ(50px) rotateY(-10deg) scale(1.08); 
+  z-index: 1;
 }
 
-.carousel-lista:hover li:not(:hover) { 
-  transform: scale(0.90);
-  filter: brightness(0.5); 
+.carousel-lista:hover li:not(:hover) {
+  transform: translateZ(-50px) rotateY(10deg) scale(0.92);
+  filter: brightness(0.8);
+}
+
+.carousel-lista li img, 
+.carousel-lista li h3 {
+  transform: translateZ(20px); 
 }
 
 .carousel-lista li h3 {
