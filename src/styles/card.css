@@ -1,0 +1,54 @@
+#card-informativo {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 30px;
+      text-align: center;
+      width: 80%;
+      max-width: 600px;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      z-index: 10;
+      background-color: #1e293b7e;
+      backdrop-filter: blur(10px);
+      border-radius: 25px;
+    }
+
+    .card-container {
+      border-radius: 10px;
+      padding: 20px;
+    }
+
+    #card-informativo h2 {
+        background-image: linear-gradient(180deg, rgba(255,255,255,1) 35%, rgba(155,160,253,1) 98%);
+        background-clip: text; 
+        -webkit-text-fill-color: transparent; 
+        font-size: 4rem;
+        margin-bottom: 20px;
+    }
+
+    .card-info {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .card-info div {
+      text-align: center;
+    }
+
+    .card-info p {
+      color: white;
+      font-size: 2rem;
+      margin: 5px 0;
+    }
+
+    #numero-faixas, #numero-artistas, #numero-ouvintes {
+        font-weight: 800;
+         background-image: linear-gradient(180deg, rgba(163,147,255,1) 35%, rgba(118,124,255,1) 76%);
+        background-clip: text; 
+        -webkit-text-fill-color: transparent; 
+
+    }
+
