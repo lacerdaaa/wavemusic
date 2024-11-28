@@ -14,3 +14,4 @@ cardInformativo.addEventListener("mouseover", () => {
   r(container, 20),
   r(containerAlbum, 5);
   
+  

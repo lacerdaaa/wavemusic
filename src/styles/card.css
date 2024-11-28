@@ -1,60 +1,85 @@
 #card-informativo {
-      position: absolute;
-      top: 29.5%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      padding: 30px;
-      text-align: center;
-      width: 80%;
-      max-width: 600px;
-      height: 300px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      z-index: 10;
-      background-color: #1e293b7e;
-      backdrop-filter: blur(10px);
-      border-radius: 25px;
+  position: absolute;
+  top: 29.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 30px;
+  text-align: center;
+  width: 80%;
+  max-width: 600px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  background-color: #1e293b7e;
+  backdrop-filter: blur(10px);
+  border-radius: 25px;
+}
+
+.card-container {
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#card-informativo h2 {
+  background-image: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 35%,
+    rgba(155, 160, 253, 1) 98%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+
+.card-info {
+  display: flex;
+  width: 125%;
+  justify-content: space-between;
+}
+
+.card-info div {
+  text-align: center;
+}
+
+.card-info p {
+  color: white;
+  font-size: 2rem;
+  margin: 5px 0;
+}
+
+#numero-faixas,
+#numero-artistas,
+#numero-ouvintes {
+  font-size: 3rem;
+  font-weight: 800;
+  background-image: linear-gradient(
+    180deg,
+    rgba(163, 147, 255, 1) 35%,
+    rgba(118, 124, 255, 1) 76%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media screen and (max-width: 600px) {
+  #card-informativo {
+    & h2 {
+      font-size: 3.2rem;
     }
+    position: absolute;
+    top: calc(100vh+ 30px);
+    flex-direction: column;
+    padding: 0;
+  }
+  .card-info {
+    width: 100%;
+    flex-direction: column;
+  }
 
-    .card-container {
-      border-radius: 10px;
-      padding: 20px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    #card-informativo h2 {
-        background-image: linear-gradient(180deg, rgba(255,255,255,1) 35%, rgba(155,160,253,1) 98%);
-        background-clip: text; 
-        -webkit-text-fill-color: transparent; 
-        font-size: 4rem;
-        margin-bottom: 20px;
-    }
-
-    .card-info {
-      display: flex;
-      width: 125%;
-      justify-content: space-between;
-    }
-
-    .card-info div {
-      text-align: center;
-    }
-
-    .card-info p {
-      color: white;
-      font-size: 2rem;
-      margin: 5px 0;
-    }
-
-    #numero-faixas, #numero-artistas, #numero-ouvintes {
-      font-size: 3rem;
-        font-weight: 800;
-         background-image: linear-gradient(180deg, rgba(163,147,255,1) 35%, rgba(118,124,255,1) 76%);
-        background-clip: text; 
-        -webkit-text-fill-color: transparent; 
-
-    }
-
+}

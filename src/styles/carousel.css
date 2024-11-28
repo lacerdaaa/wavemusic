@@ -66,3 +66,12 @@
   0% { transform: translateX(0); }
   100% { transform: translateX(-50%); } 
 }
+
+@media screen and (max-widh: 600px) {
+  .carousel-lista li {
+    & img {
+      width: 200px;
+      height: auto;
+    }
+  }
+}
