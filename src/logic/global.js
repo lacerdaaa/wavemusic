@@ -1,7 +1,6 @@
 import { criarPontosDeLuz as r } from "./light.js";
 import { iniciarAnimacaoNumeros as o } from "./numbers.js";
 import { iniciarCarousel as e } from "./caroulsel.js";
-import { inserirFooter } from './footer.js'
 
 
 let container = document.querySelector(".container"),
@@ -15,4 +14,3 @@ cardInformativo.addEventListener("mouseover", () => {
   r(container, 20),
   r(containerAlbum, 5);
   
-inserirFooter()
