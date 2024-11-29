@@ -1,7 +1,7 @@
 nav {
     background-color: #ffffff27;
     backdrop-filter: blur(10px);
-    width: 85vw;
+    width: 95vw;
     max-width: 1440px;
     height: 95px;
     border: 0.5px solid #cccccc2b;
@@ -29,9 +29,11 @@ nav ul {
         font-weight: 200;
         color: #FFF;
     }
+
     & li:hover {
         font-weight: 600;
         text-decoration: wavy;
+        
     }
 }
 

@@ -3,7 +3,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
+
 }
 
 .container-albuns {
@@ -153,4 +153,19 @@
 #album2 {
   position: relative;
   transform: translateY(20%);
+}
+
+
+@media screen and (max-width: 600px) {
+  #albums {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  .container-albuns {
+    width: 100%;
+    right: 0;
+    top: 0;
+  }
 }

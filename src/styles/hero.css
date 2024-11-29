@@ -1,12 +1,13 @@
+/* 
+
+ */
+
 #hero {
   height: 100vh;
+  padding: 15em 2em 0 1.4em;
   display: flex;
-  justify-content: center;
   flex-direction: column;
-  background-image: url("../assets/foreground.png");
-  background-size: cover;
-  padding: 7.5vw;
-  align-items: flex-start;
+  gap: 30px;
 }
 
 #hero h1,
@@ -21,58 +22,81 @@ h3 {
   z-index: 2;
 }
 
-#hero h1 {
-  font-size: 8.9rem;
-  width: 90%;
-}
-
-#hero h3 {
-  font-size: 3.2rem;
-  font-weight: 500;
-  width: 64%;
-}
-
 #hero_btn {
-  width: 23%;
-  height: 75px;
+  padding: 1.3em 1.8em;
+  max-width: 150px;
   border-radius: 15px;
-  font-size: 3.2rem;
-  background: rgb(80, 87, 255);
+  border-style: none;
+  font-size: 1.6em;
   background: linear-gradient(
     94deg,
     rgba(80, 87, 255, 1) 0%,
     rgba(155, 160, 253, 1) 100%
   );
   color: #fff;
-  outline: none;
-  border-style: none;
-  transition: all 0.7s;
-  & #hero_btn:active {
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  margin-top: 6px;
+  transition: all 0.3s;
+}
+
+#hero_btn:hover {
+  transform: scale(1.05);
+}
+
+@media screen and (min-width: 1024px) {
+  #hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url("../assets/foreground.png");
+    background-size: cover;
+    padding: 7.5vw;
+    align-items: flex-start;
+  }
+
+  #hero h1,
+  h3 {
+    background-image: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 1) 35%,
+      rgba(155, 160, 253, 1) 98%
+    );
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    z-index: 2;
+  }
+
+  #hero h1 {
+    font-size: 8.9rem;
+    width: 90%;
+  }
+
+  #hero h3 {
+    font-size: 3.2rem;
+    font-weight: 500;
+    width: 64%;
+  }
+
+  #hero_btn {
+    border-radius: 15px;
+    padding: 1.5em 4em;
+    background: rgb(80, 87, 255);
+    background: linear-gradient(
+      94deg,
+      rgba(80, 87, 255, 1) 0%,
+      rgba(155, 160, 253, 1) 100%
+    );
+    color: #fff;
+    outline: none;
     border-style: none;
+    transition: all 0.7s;
+    max-width: 300px;
+
+  
+  }
+  #hero_btn:hover {
+    transform: scale(1.07);
   }
 }
-#hero_btn:hover {
-  transform: scale(1.07);
-}
-
-@media screen and (max-width: 1063px) {
-    #hero {
-        padding: 5vw 3vw;
-    }
-    #hero h1 {
-        font-size: 5.6rem;
-        width: 100%;
-
-    }
-    #hero h3 {
-        font-size: 2.8rem;
-        margin-bottom: 10px;
-        width: 100%;
-    }
-    #hero button {
-        font-size: 2.3rem;
-        width: 50%;
-    }
-}
-
-
